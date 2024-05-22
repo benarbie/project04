@@ -1,0 +1,184 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    background: linear-gradient(rgb(95, 195, 245) 0%, rgb(66, 181, 185) 100%);
+    height: 100vh;
+}
+/* Bunny Head */
+.bunny-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    width: 295px;
+    height: 215px;
+    background: linear-gradient(rgb(235, 239, 241) 75%, rgb(183, 184, 184) 100%);
+    border: 1px solid black;
+    border-radius: 50% 49% 50% 50% / 86% 87% 36% 36% ;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+/* Bunny Ears */
+/* All Ears */
+.bunny-ears > div {
+    width: 90px;
+    height: 200px;
+    background: linear-gradient(rgb(168, 168, 168) 10%, rgb(237, 248, 248) 60%);
+    position: absolute;
+    border-radius: 50px 50px 10px 10px;
+    border: 1px solid black;
+    top: 32%;
+}
+.inner-ear {
+    width: 50px;
+    height: 150px;
+    background: linear-gradient(rgb(187, 141, 149) 10%, pink 50%);
+    border-radius: 30px;
+    position: absolute;
+    left: 22px;
+    top: 25px;
+}
+.ear-fold {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 92px;
+    border-radius: 50px 50px 35px 35px;
+    background-color: black;
+    background: linear-gradient(rgb(139, 139, 139) 10%, rgb(219, 219, 219) 80%);
+    box-shadow: 0px -5px 10px 2px;
+}
+/* Left Ear */
+.bunny-outer-ear-left {
+    left: 45%;
+    transform: rotate(-5deg);
+}
+.bunny-inner-ear-left {
+    transform: rotate(-1deg);
+}
+.bunny-ear-left-fold {
+    transform: rotate(-185deg);
+    height: 55px;
+}
+/* Right Ear */
+.bunny-outer-ear-right {
+    right: 45%;
+    transform: rotate(5deg);
+}
+.bunny-inner-ear-right {
+    transform: rotate(1deg);
+}
+.bunny-ear-right-fold {
+    transform: rotate(-175deg);
+    height: 85px;
+}
+/* Bunny Eyes */
+.bunny-eyes > div {
+    height: 35px;
+    width: 22px;
+    background-color: rgb(0,0,0);
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+}
+.bunny-eye-right {
+    right: 30%;
+}
+.bunny-eye-right-inner {
+    height: 17px;
+    width:  9px;
+    background: rgb(235, 239, 241);
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    right: 30%;
+}
+.bunny-eye-left {
+    left: 30%;
+}
+.bunny-eye-left-inner {
+    height: 17px;
+    width:  9px;
+    background: rgb(235, 239, 241);
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+/* Bunny Nose */
+.bunny-nose {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0,0,0);
+    border-radius: 30px 30px 18px 18px;
+    position: absolute;
+    transform: rotate(180deg);
+    top: 50%;
+}
+/* Bunny Mouth */
+.bunny-mouth div {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 250%/250px 210px 0 0;
+    border-color: black transparent transparent transparent;
+}
+.bunny-mouth-left {
+    position: absolute;
+    top: 50%;
+    left: 41.5%;
+    transform: rotate(180deg);
+}
+.bunny-mouth-right {
+    position: absolute;
+    top: 50%;
+    right: 41%;
+    transform: rotate(180deg);
+}
+/* Bunny Whiskers */
+.bunny-whiskers div {
+    height: 50px;
+    border: 1px solid #050505;
+    border-radius: 250%/50px 50px 0 0;
+    border-color: rgb(129, 129, 129) transparent transparent transparent;
+    position: absolute;
+}
+#whisker-left-top {
+    top: 50%;
+    left: 30%;
+    width: 45px;
+}
+#whisker-left-middle {
+    top: 56%;
+    left: 25%;
+    width: 60px;
+    transform: rotate(-6deg);
+}
+#whisker-left-bottom {
+    top: 62%;
+    left: 20%;
+    width: 80px;
+    transform: rotate(-12deg);
+}
+#whisker-right-top {
+    top: 50%;
+    right: 30%;
+    width: 45px;
+}
+#whisker-right-middle {
+    top: 56%;
+    right: 25%;
+    width: 60px;
+    transform: rotate(6deg);
+}
+#whisker-right-bottom {
+    top: 62%;
+    right: 20%;
+    width: 80px;
+    transform: rotate(12deg);
+}
